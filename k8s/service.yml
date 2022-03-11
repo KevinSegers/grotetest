@@ -1,0 +1,13 @@
+11 lines (11 sloc)  163 Bytes
+   
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-weather
+spec:
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 80
+  selector:
+    app: hello-weather
